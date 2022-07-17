@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Js Web Layout</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <p id="header"></p>
+        <p id="download"></p>
+
+    </div>
+
+    <div id="leftsidebar">
+
+        <p id="leftside"></p>
+        <p id="center"></p>
+        <p id="rightside"></p>
+
+    </div>
+
+    <div id="footer">
+
+    </div>
+
+
+    <script>
+        
+        // let ul1 = document.createElement('ul');
+        let header = window.document.createTextNode("Head");
+
+        document.getElementById('header').innerHTML="Header(left)";
+
+
+        let righthead = window.document.createTextNode("right");
+
+        document.getElementById('download').innerHTML="Header(Right)";
+
+
+
+
+        let sidebar = document.createTextNode( "Navigation here. long long very filler fill fill filler text fill very silly fill text filler silly silly filler fill very make fill column text column very very column fill fill very silly column silly silly fill fill long filler");
+       
+        let para =document.createElement("table");
+      
+        para.appendChild(sidebar);
+        
+        document.getElementById('leftside').appendChild(para);
+
+
+
+
+        
+        let middle = document.createTextNode("Content here. column long long coll column text silly very make long very fill silly make make long make text fill very long text column silly silly very column long very column filler fill long make filler long silly very long silly silly silly long filler make column filler make silly long long fill very very make make fill silly long long filler column long make silly silly column filler fill fill very filler text fill filler column make fill make text very make make very fill fill long make very filler column very long very filler silly very make filler silly make make column column fill long make long text very make long fill column make text very silly column filler silly text fill text filler filler filler make make make make text filler fill column filler make silly make text text fill make very filler column very column text long column make silly long text filler silly very very very long filler fill very fill silly very make make filler text filler text make silly text text long fill fill make text fill long text very silly long long filler filler fill silly long make column make silly long column long make very");
+       
+        let midarea = document.createElement('table');
+       
+        midarea.appendChild(middle);
+
+        document.getElementById('center').appendChild(midarea);
+
+
+
+
+
+        let rightbar = document.createTextNode("More stuff here. very te very text make long filler very make column make silly column fill silly column long make silly filler column filler silly long long column fill silly column very");
+       
+        let text = document.createElement('table');
+        
+        text.appendChild(rightbar);
+       
+        document.getElementById('rightside').appendChild(text);
+
+
+
+
+        let bottomLine = document.createTextNode('This is Footer');
+       
+        let footerText = document.createElement('p');
+        
+        footerText.appendChild(bottomLine);
+      
+        document.getElementById('footer').appendChild(footerText);
+      
+
+    
+    </script>
+
+</body>
+</html>

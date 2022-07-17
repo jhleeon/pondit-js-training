@@ -1,0 +1,25 @@
+#container{
+    background-color: rgb(146, 139, 139);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#leftsidebar{
+    
+    display: flex;
+    justify-content:space-between;
+}
+#leftside{
+    background-color:rgb(230, 204, 92);
+    margin-right: 20px;
+}
+#rightside{
+    margin-left: 20px;
+    background-color: rgb(253, 134, 43);
+}
+#footer{
+    background-color: #022;
+    color: rgb(50, 21, 219);
+    padding: 10px 0px;
+    text-align: center;
+}
